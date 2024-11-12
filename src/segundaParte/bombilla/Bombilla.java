@@ -2,12 +2,13 @@ package segundaParte.bombilla;
 
 public class Bombilla {
     private boolean interruptor;
-    private static boolean interruptorGeneral = false;
-
     /**
      * el interruptor general sera el mismo para toda la casa y por consecuente para
-     * todas las bombillas
+     * todas las bombillas entonces es static y no se muestra en el constructor de bombilla
      */
+    private static boolean interruptorGeneral = false;
+
+    
     public Bombilla() {
         interruptor = false;
     }
