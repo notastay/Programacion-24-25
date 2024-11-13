@@ -9,11 +9,10 @@ public class Main {
         EjemplarLibro libro1= new EjemplarLibro(l1);
         EjemplarLibro libro2= new EjemplarLibro(l2);
         EjemplarLibro libro3= new EjemplarLibro(l3);
-        EjemplarLibro libro4= new EjemplarLibro(l4);
         libro1.prestar();
         libro3.prestar();
         libro1.devolver();
-        System.out.println(libro1.toString()+" "+libro2.toString()+" "+ libro3.toString()+" "+ libro4.toString());
+        System.out.println(libro1.toString()+" "+libro2.toString()+" "+ libro3.toString()+" "+ l4.toString());
 
 
 
