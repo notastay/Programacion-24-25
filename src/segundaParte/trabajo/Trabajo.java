@@ -1,20 +1,23 @@
 package segundaParte.trabajo;
 
+import java.util.Scanner;
+
 public class Trabajo {
+    static Scanner tecl=new Scanner(System.in);
     private static double precioHorasExtra;
     private static int numTrabajadores;
+    public static void setTecl(Scanner tecl) {
+        Trabajo.tecl = tecl;
+    }
+
     private String nombre;
     private String dNI;
     private double sueldoBase;
     private int horasExtraMes;
     private double tipoIRPF;
 
-    public Trabajo(String nombre, String dNI, double sueldoBase, int horasExtraMes, double tipoIRPF) {
-        this.nombre = nombre;
-        this.dNI = dNI;
-        this.sueldoBase = sueldoBase;
-        this.horasExtraMes = horasExtraMes;
-        this.tipoIRPF = tipoIRPF;
+    public Trabajo() {
+        
     }
 
     public static double getPrecioHorasExtra() {
@@ -97,6 +100,19 @@ public class Trabajo {
         "Sueldo Bruto: "+calcularSueldoBruto()+"\n"+
         "Retencion por IRPF: "+calcularRetencionIrpf()+"\n"+
         "Sueldo Neto: "+calcularSueldo();
+    }
+
+    public void leerTrabajador(){
+        System.out.print("Nombre: ");
+        this.nombre=tecl.nextLine();
+        System.out.print("DNI: ");
+        this.dNI=tecl.nextLine();
+        System.out.print("Sueldo Base: ");
+        this.sueldoBase=tecl.nextDouble();
+        System.out.print("Horas Extra: ");
+        this.horasExtraMes=tecl.nextInt();
+        System.out.print("Tipo IRPF: ");
+        this.tipoIRPF=tecl.nextDouble();
     }
 
     
