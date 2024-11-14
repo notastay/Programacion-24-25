@@ -6,9 +6,6 @@ public class Trabajo {
     static Scanner tecl=new Scanner(System.in);
     private static double precioHorasExtra;
     private static int numTrabajadores;
-    public static void setTecl(Scanner tecl) {
-        Trabajo.tecl = tecl;
-    }
 
     private String nombre;
     private String dNI;
