@@ -13,8 +13,8 @@ public class Trabajo {
     private int horasExtraMes;
     private double tipoIRPF;
 
-    public Trabajo(Trabajo t) {
-        t.leerTrabajador();
+    public Trabajo() {
+        Trabajo.leerTrabajador();
     }
 
     public static double getPrecioHorasExtra() {
