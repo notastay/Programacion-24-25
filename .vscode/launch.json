@@ -1,0 +1,231 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Ej7_cadenas",
+            "request": "launch",
+            "mainClass": "Ej7_cadenas",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Tema_6.a_Ej1.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(1)",
+            "request": "launch",
+            "mainClass": "Tema_6.a_Ej2.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(2)",
+            "request": "launch",
+            "mainClass": "Tema_6.a_Ej3.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(3)",
+            "request": "launch",
+            "mainClass": "Tema_6.a_Ej4.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(4)",
+            "request": "launch",
+            "mainClass": "Tema_6.b_Ej1.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(5)",
+            "request": "launch",
+            "mainClass": "Tema_6.b_Ej2.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(6)",
+            "request": "launch",
+            "mainClass": "Tema_6.b_Ej3.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(7)",
+            "request": "launch",
+            "mainClass": "Tema_6.b_Ej4.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(8)",
+            "request": "launch",
+            "mainClass": "Tema_6.c_Ej1.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(9)",
+            "request": "launch",
+            "mainClass": "Tema_6.c_Ej2.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(10)",
+            "request": "launch",
+            "mainClass": "Tema_6.c_Ej3.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(11)",
+            "request": "launch",
+            "mainClass": "Tema_6.c_Ej4.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(12)",
+            "request": "launch",
+            "mainClass": "Tema_6.d_Ej1.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(13)",
+            "request": "launch",
+            "mainClass": "Tema_6.d_Ej2.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(14)",
+            "request": "launch",
+            "mainClass": "Tema_6.d_Ej3.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(15)",
+            "request": "launch",
+            "mainClass": "Tema_6.d_Ej4.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(16)",
+            "request": "launch",
+            "mainClass": "Tema_6.e_Ej1.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(17)",
+            "request": "launch",
+            "mainClass": "Tema_6.e_Ej2.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(18)",
+            "request": "launch",
+            "mainClass": "Tema_6.e_Ej3.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(19)",
+            "request": "launch",
+            "mainClass": "Tema_6.e_Ej4.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(20)",
+            "request": "launch",
+            "mainClass": "Tema_6.segundaParte.bombilla.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(21)",
+            "request": "launch",
+            "mainClass": "Tema_6.segundaParte.consumoElectrico.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(22)",
+            "request": "launch",
+            "mainClass": "Tema_6.segundaParte.ejemplarLibro.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Main(23)",
+            "request": "launch",
+            "mainClass": "Tema_6.segundaParte.trabajo.Main",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Ej1_cadenas",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej1_cadenas",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Ej2_cadenas",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej2_cadenas",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Ej3_cadenas",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej3_cadenas",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Ej4_cadenas",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej4_cadenas",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Ej5_cadenas",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej5_cadenas",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Ej6_cadenas",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej6_cadenas",
+            "projectName": "Programacion-24-25_e798f1db"
+        }
+    ]
+}
