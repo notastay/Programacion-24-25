@@ -1,3 +1,4 @@
+package Tema_7;
 import java.util.Scanner;
 
 public class Ej7_cadenas {
@@ -19,5 +20,6 @@ public class Ej7_cadenas {
         }else{
             System.out.println("No es palindromo");
         }
+        tecl.close();
     }
 }
