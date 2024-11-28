@@ -9,5 +9,6 @@ public class Ej11_cadenas {
         String email=tecl.nextLine();
         String dominios=email.substring(email.indexOf("@"),email.length()-3);
         System.out.println(dominios);
+        tecl.close();
     }
 }
