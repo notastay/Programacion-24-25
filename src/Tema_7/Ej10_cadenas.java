@@ -3,7 +3,7 @@ package Tema_7;
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Ej9_cadenas {
+public class Ej10_cadenas {
     public static void main(String[] args) {
         Scanner tecl=new Scanner(System.in);
         String opciones="abcdefghij";
@@ -15,7 +15,8 @@ public class Ej9_cadenas {
         }while(posiciones<5||posiciones>10);
         for (int i = 0; i < posiciones; i++) {
             int numero=ThreadLocalRandom.current().nextInt(0,opciones.length());
-            contraseña=contraseña+opciones.charAt(numero);         
+            contraseña=contraseña+opciones.charAt(numero);  
+            opciones=opciones.replace(""+opciones.charAt(numero),"" );     
         }
         System.out.println(contraseña);
         tecl.close();
