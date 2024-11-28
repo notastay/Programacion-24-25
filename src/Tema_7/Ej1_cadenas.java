@@ -28,8 +28,7 @@ public class Ej1_cadenas {
         }else{
             System.out.println("La cadena no es hola");
         }
-        int aNumeros;
-        int cantDigitos=cadena.length();
+        tecl.close();
         
     }
 }
