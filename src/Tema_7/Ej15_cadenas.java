@@ -10,7 +10,7 @@ public class Ej15_cadenas {
         StringBuilder sb = new StringBuilder();
         do {
             contadorRepes=0;
-            System.out.println("Dame una cadena se 6 posiciones");
+            System.out.println("Dame una cadena se 6 digitos");
             cadena = tecl.nextLine();
             sb = new StringBuilder(cadena);
             for (int i = 0; i < sb.length(); i++) {
