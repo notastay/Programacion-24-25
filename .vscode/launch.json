@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ej16_cadenas",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej16_cadenas",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
             "name": "Ej15_cadenas",
             "request": "launch",
             "mainClass": "Tema_7.Ej15_cadenas",
