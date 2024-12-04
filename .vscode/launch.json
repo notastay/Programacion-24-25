@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ej30_funciones",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej30_funciones",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
             "name": "Ej29_funciones",
             "request": "launch",
             "mainClass": "Tema_7.Ej29_funciones",
