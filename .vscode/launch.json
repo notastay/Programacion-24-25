@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ej26_funciones",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej26_funciones",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Ej25_funciones",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej25_funciones",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Ej24_funciones",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej24_funciones",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Ej23_funciones",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej23_funciones",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Ej21_funciones",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej21_funciones",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Ej20_funciones",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej20_funciones",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
             "name": "Ej18_cadenas",
             "request": "launch",
             "mainClass": "Tema_7.Ej18_cadenas",
