@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ej29_funciones",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej29_funciones",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Ej28_funciones",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej28_funciones",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Ej27_funciones",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej27_funciones",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
             "name": "Ej26_funciones",
             "request": "launch",
             "mainClass": "Tema_7.Ej26_funciones",
