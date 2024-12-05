@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ej35_funciones",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej35_funciones",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Ej34_funciones",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej34_funciones",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Ej33_funciones",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej33_funciones",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Ej32_funciones",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej32_funciones",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
+            "name": "Ej31_funciones",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej31_funciones",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
             "name": "Ej30_funciones",
             "request": "launch",
             "mainClass": "Tema_7.Ej30_funciones",

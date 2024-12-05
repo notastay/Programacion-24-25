@@ -7,25 +7,34 @@ public class Ej30_funciones {
         String opcion;
         Scanner tecl = new Scanner(System.in);
         do {
-            System.out.println(
-                    " Menu \n********* \n a) Area de círculo (necesitará el radio) \n b) el área de cuadrado (ecesitará el lado) \n c) el área detriángulo (necesitará base y altura) \n d) Salir");
+            System.out.println("      ");
+            System.out.println(" Menu \n********* \n a) Area de círculo (necesitará el radio) \n b) el área de cuadrado (ecesitará el lado) \n c) el área detriángulo (necesitará base y altura) \n d) Salir");
+            System.out.println("   ");
             opcion = tecl.nextLine();
             switch (opcion) {
                 case "A":
                     System.out.println("Dime el radio");
-                    System.out.println(areaCirculo(tecl.nextDouble()));
+                    double radio = tecl.nextDouble();
+                    tecl.nextLine();
+                    System.out.println(areaCirculo(radio));
                     break;
 
                 case "B":
                     System.out.println("Dime el lado");
-                    System.out.println(areaCuadrado(tecl.nextDouble()));
+                    double lado=tecl.nextDouble();
+                    tecl.nextLine();
+                    System.out.println(areaCuadrado(lado));
                     break;
                 case "C":
                     System.out.println("Dime base y altura");
-                    System.out.println(areaTriangulo(tecl.nextDouble(), tecl.nextDouble()));
+                    double base=tecl.nextDouble();
+                    double altura=tecl.nextDouble();
+                    tecl.nextLine();
+                    System.out.println(areaTriangulo(base, altura));
                     break;
 
                 default:
+                System.out.println("Opcion no valida");
                     break;
             }
 
@@ -34,12 +43,13 @@ public class Ej30_funciones {
     }
 
     public static double areaCirculo(double radio) {
-        double res = Math.pow(Math.PI * radio);
+        final double PI=Math.PI;
+        double res = Math.pow(radio,2)*PI;
         return res;
     }
 
     public static double areaCuadrado(double lado) {
-        return lado * 4;
+        return lado * lado;
     }
 
     public static double areaTriangulo(double base, double altura) {
