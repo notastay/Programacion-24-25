@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ej40_encriptadoCesar",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej40_encriptadoCesar",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
             "name": "Ej35_funciones",
             "request": "launch",
             "mainClass": "Tema_7.Ej35_funciones",
