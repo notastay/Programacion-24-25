@@ -3,12 +3,12 @@ package Tema_7;
 public class Ej40_encriptadoCesar {
     public static void main(String[] args) {
         
-        System.out.println(encriptar("HALO ALLES GUTEN MORGEN", 28));
-        System.out.println(encriptar("JQNC DWGPCB", -28));
+        System.out.println(encriptar("HALO! ALLES GUTEN MORGEN", 28));
+        System.out.println(encriptar("JQNC DWGPCB!", -28));
     }
 
     public static String encriptar(String cadena, int posiciones){
-        cadena.toUpperCase();
+        cadena=cadena.toUpperCase();
         String letras="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String encriptado="";
         while (posiciones>=letras.length()||posiciones<0) {
@@ -35,7 +35,7 @@ public class Ej40_encriptadoCesar {
 
     }
     public static String desencriptar(String cadena, int posiciones){
-        cadena.toUpperCase();
+        cadena=cadena.toUpperCase();
         String letras="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String desencriptado="";
         while (posiciones>=letras.length()||posiciones<0) {
