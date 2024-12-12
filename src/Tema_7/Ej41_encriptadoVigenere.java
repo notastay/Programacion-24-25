@@ -1,6 +1,6 @@
 package Tema_7;
 
-public class Ej40_encriptadoVigenere {
+public class Ej41_encriptadoVigenere {
     public static void main(String[] args) {
         
         System.out.println(encriptar("Buenas noches","LIMON"));
