@@ -3,8 +3,8 @@ package Tema_7;
 public class Ej40_encriptadoVigenere {
     public static void main(String[] args) {
         
-        System.out.println(encriptar("HALO! ALLES GUTEN MORGEN","LIMON"));
-        System.out.println(desencriptar("SIXC! NWTQG TFBQB ZZZSSA","LIMON" ));
+        System.out.println(encriptar("Buenas noches","LIMON"));
+        System.out.println(desencriptar("NDRCOE WBRVQB","LIMON" ));
     }
 
     public static String encriptar(String cadena,String clave){
@@ -18,7 +18,7 @@ public class Ej40_encriptadoVigenere {
                 encriptado=encriptado+cadena.substring(i,i+1);
                 continue;
             }
-            int desplazamiento = letras.indexOf(clave.substring(claveIndice, claveIndice + 1));
+            int desplazamiento = letras.indexOf(clave.substring(claveIndice, claveIndice + 1))+1;
             claveIndice = (claveIndice + 1) % clave.length(); 
             int charPosicion = letras.indexOf(cadena.substring(i, i + 1)) + desplazamiento;
             if (charPosicion >= letras.length()) {
@@ -40,7 +40,7 @@ public class Ej40_encriptadoVigenere {
                 desencriptado=desencriptado+cadena.substring(i,i+1);
                 continue;
             }
-        int desplazamiento = letras.indexOf(clave.substring(claveIndice, claveIndice + 1));
+        int desplazamiento = letras.indexOf(clave.substring(claveIndice, claveIndice + 1))+1;
         claveIndice = (claveIndice + 1) % clave.length(); 
         int charPosicion = letras.indexOf(cadena.substring(i, i + 1)) - desplazamiento;
             if (charPosicion < 0) {
@@ -51,7 +51,7 @@ public class Ej40_encriptadoVigenere {
         return desencriptado;
 
     }
-    public static String cesar(String cadena, String clave, boolean encriptar){
+    public static String viginere(String cadena, String clave, boolean encriptar){
         if(encriptar==true){
             return encriptar(cadena,clave);
         }
