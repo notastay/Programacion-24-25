@@ -8,11 +8,12 @@ public class Ej40_encriptadoVigenere {
     }
 
     public static String encriptar(String cadena){
+        cadena.toUpperCase();
         String letras="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String encriptado="";
         for (int i = 0; i < cadena.length(); i++) {
-            if(cadena.substring(i, i+1).equals(" ")){
-                encriptado=encriptado+" ";
+            if(!letras.contains(cadena.substring(i, i+1))){
+                encriptado=encriptado+cadena.substring(i,i+1);
                 continue;
             }
             int posiciones=letras.indexOf(letras.charAt(i))+1;
@@ -27,11 +28,12 @@ public class Ej40_encriptadoVigenere {
 
     }
     public static String desencriptar(String cadena){
+        cadena.toUpperCase();
         String letras="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String desencriptado="";
         for (int i = 0; i < cadena.length(); i++) {
-            if(cadena.substring(i, i+1).equals(" ")){
-                desencriptado=desencriptado+" ";
+            if(!letras.contains(cadena.substring(i, i+1))){
+                desencriptado=desencriptado+cadena.substring(i,i+1);
                 continue;
             }
             int posiciones=letras.indexOf(letras.charAt(i))+1;

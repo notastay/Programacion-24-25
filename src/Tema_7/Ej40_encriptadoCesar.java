@@ -8,6 +8,7 @@ public class Ej40_encriptadoCesar {
     }
 
     public static String encriptar(String cadena, int posiciones){
+        cadena.toUpperCase();
         String letras="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String encriptado="";
         while (posiciones>=letras.length()||posiciones<0) {
@@ -19,8 +20,8 @@ public class Ej40_encriptadoCesar {
             }
         }
         for (int i = 0; i < cadena.length(); i++) {
-            if(cadena.substring(i, i+1).equals(" ")){
-                encriptado=encriptado+" ";
+            if(!letras.contains(cadena.substring(i, i+1))){
+                encriptado=encriptado+cadena.substring(i,i+1);
                 continue;
             }
             int charPosicion=letras.indexOf(cadena.charAt(i));
@@ -34,6 +35,7 @@ public class Ej40_encriptadoCesar {
 
     }
     public static String desencriptar(String cadena, int posiciones){
+        cadena.toUpperCase();
         String letras="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String desencriptado="";
         while (posiciones>=letras.length()||posiciones<0) {
@@ -45,8 +47,8 @@ public class Ej40_encriptadoCesar {
             }
         }
         for (int i = 0; i < cadena.length(); i++) {
-            if(cadena.substring(i, i+1).equals(" ")){
-                desencriptado=desencriptado+" ";
+            if(!letras.contains(cadena.substring(i, i+1))){
+                desencriptado=desencriptado+cadena.substring(i,i+1);
                 continue;
             }
             int charPosicion=letras.indexOf(cadena.charAt(i));
