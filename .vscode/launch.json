@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ej44_pruebaMastermind",
+            "request": "launch",
+            "mainClass": "Tema_7.Ej44_pruebaMastermind",
+            "projectName": "Programacion-24-25_e798f1db"
+        },
+        {
+            "type": "java",
             "name": "Ej43_camelSnake",
             "request": "launch",
             "mainClass": "Tema_7.Ej43_camelSnake",
