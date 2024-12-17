@@ -25,7 +25,32 @@ public class Ej44_Mastermind {
         }
     }
 
-    
-
-
+    public int numerosCorrectos(String cadena){
+        int contadorIgualPos=0;
+        if(combinacion.length()==cadena.length()&&cadena.matches("^[1-9]+$")){
+            for (int i = 0; i < combinacion.length(); i++) {
+                String recorreCadena=cadena.substring(i, i+1);
+                if(recorreCadena.equals(combinacion.charAt(i)+"")){
+                    contadorIgualPos++;
+                }
+            }
+            return contadorIgualPos;
+        }
+        return -1;
+    }
+    public int numerosOtraPosicion(String cadena){
+        int contadorIgual=0;
+        if(combinacion.length()==cadena.length()&&cadena.matches("^[1-9]+$")){
+            for (int i = 0; i < combinacion.length(); i++) {
+                for (int j = 0; j < cadena.length(); j++) {
+                    String recorreCadena=cadena.substring(i, i+1);
+                    if(recorreCadena.equals(combinacion.charAt(j)+"")){
+                        contadorIgual++;
+                    }
+                }
+            }
+            return contadorIgual;
+        }
+        return -1;
+    }
 }
