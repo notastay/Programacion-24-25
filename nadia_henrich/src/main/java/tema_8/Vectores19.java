@@ -16,7 +16,7 @@ public class Vectores19 {
         }
         Arrays.sort(puntuaciones);
         for (int i = 0; i < puntuacionesSorted.length; i++) {
-            puntuacionesSorted[i]=puntuaciones[puntuaciones.length-i];
+            puntuacionesSorted[i]=puntuaciones[puntuaciones.length-i-1];
         }
         for (int i : puntuacionesSorted) {
             System.out.println(i);
