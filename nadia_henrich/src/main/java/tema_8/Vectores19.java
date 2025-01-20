@@ -21,6 +21,7 @@ public class Vectores19 {
         for (int i : puntuacionesSorted) {
             System.out.println(i);
         }
-        
+    tecl.close();   
     }
+    
 }

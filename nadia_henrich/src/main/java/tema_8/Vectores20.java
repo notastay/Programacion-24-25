@@ -21,5 +21,6 @@ public class Vectores20 {
         if(contadorN>0){
             System.out.println(n+ " Esta en el array "+contadorN+" veces");
         }
+        tecl.close();
     }
 }
