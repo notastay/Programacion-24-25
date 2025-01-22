@@ -40,8 +40,9 @@ public class Arraylist1 {
                 case "d":
                         System.out.println("Dime la altura a eliminar");
                         altura=tecl.nextDouble();
+                        contadorBorrados =0;
                         for (int i = 0; i < alturas.size(); i++) {
-                            if(alturas.indexOf(i)==altura){
+                            if(alturas.get(i).equals(altura)){
                                 alturas.remove(i);
                                 contadorBorrados++;
                             }
