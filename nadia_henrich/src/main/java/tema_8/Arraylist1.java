@@ -53,6 +53,10 @@ public class Arraylist1 {
                 case "e":
                         alturas.sort(null);
                     break;
+                
+                case "f":
+                    System.out.println("Saliendo...");
+                break;
 
                 default:
                 System.out.println("Opcion Invalida");

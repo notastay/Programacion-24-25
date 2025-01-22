@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Arraylist1",
+            "request": "launch",
+            "mainClass": "tema_8.Arraylist1",
+            "projectName": "nadia_henrich"
+        },
+        {
+            "type": "java",
             "name": "Ej44_pruebaMastermind",
             "request": "launch",
             "mainClass": "Tema_7.Ej44_pruebaMastermind",

@@ -69,7 +69,8 @@ public class Factura {
         for (LineaFactura linea : lineaFactura) {
             sumaTotal += linea.getImporteTotal();
         }
-        return sumaTotal*(1+(21/100));
+        total= sumaTotal*(1+(iVA/100));
+        return total;
     }
 
     public void mostrarFactura(){

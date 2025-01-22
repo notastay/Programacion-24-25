@@ -13,7 +13,7 @@ public class LineaFactura {
         this.cantidadUnidades = cantidadUnidades;
         this.descuento=(cantidadUnidades<10)?5 :0;
         double precioFinal =(precioUnitario * cantidadUnidades);
-        this.importeTotal = precioFinal - (precioFinal * (descuento/100));
+        this.importeTotal = precioFinal - (precioFinal * (descuento/100.0));
     }
 
     public String getDescripcion() {
