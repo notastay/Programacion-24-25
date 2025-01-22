@@ -33,11 +33,11 @@ public class Arraylist1 {
                     }
                     break;
 
-                    case "c":
+                case "c":
                         alturas.remove(tecl.nextInt());
                     break;
 
-                    case "d":
+                case "d":
                         System.out.println("Dime la altura a eliminar");
                         altura=tecl.nextDouble();
                         for (int i = 0; i < alturas.size(); i++) {
@@ -46,11 +46,19 @@ public class Arraylist1 {
                                 contadorBorrados++;
                             }
                         }
+                        System.out.println("se han borrado "+contadorBorrados+" numeros");
                     break;
+
+                case "e":
+                        alturas.sort(null);
+                    break;
+
                 default:
+                System.out.println("Opcion Invalida");
                     break;
             }
             
         } while (!opcion.equals("f"));
+        tecl.close();
     }
 }
