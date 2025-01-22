@@ -7,6 +7,19 @@ public class LineaFactura {
     private final int descuento;
     private double importeTotal;
 
+    /**
+     * Con el uso de un ternario le damos valor a descuento, 
+     * calcula el precio final sin descuento y 
+     * despues calcula el importe con el descuento.
+     * 
+     * @param descripcion
+     *      La descripcion del objeto a comprar/vender
+     * @param precioUnitario
+     *      El precio por unidad del producto
+     * @param cantidadUnidades
+     *      La cantidad de unidades a comprar/vender
+     * 
+     */
     public LineaFactura(String descripcion, double precioUnitario, int cantidadUnidades) {
         this.descripcion = descripcion;
         this.precioUnitario = precioUnitario;

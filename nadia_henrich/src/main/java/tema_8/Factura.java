@@ -11,6 +11,16 @@ public class Factura {
     private ArrayList<LineaFactura> lineaFactura;
     private double total;
 
+    /**
+     * La fecha se inicializa con la fecha en el momento de la creacion de la factura
+     * La linea factura inicializa un ArrayList de objetos de tipo LineaFactura
+     * El total se inicializa en 0
+     * 
+     * @param identificador
+     *      El numero que identifica cada factura
+     * @param idCliente
+     *      El numero que identifica el cliente
+     */
     public Factura(int identificador,  int idCliente) {
         this.identificador = identificador;
         this.fecha = LocalDate.now();
@@ -19,12 +29,31 @@ public class Factura {
         this.total=0;
     }
 
+    /**
+     * Se crea un objeto de tipo {@code LineaFactura} y
+     * se añade al {@link ArrayList}, luego se recalcula el total.
+     * 
+     * @param descripcion
+     *      La descripcion del objeto a comprar/vender
+     * @param precioUnitario
+     *      El precio por unidad del producto
+     * @param cantidadUnidades
+     *      La cantidad de unidades a comprar/vender
+     * 
+     * @see LineaFactura#LineaFactura(String, double, int)
+     */
     public void añadirLinea(String descripcion,double precioUnitario, int cantidad){
         LineaFactura linea= new LineaFactura(descripcion, precioUnitario, cantidad);
         lineaFactura.add(linea);
         calcularTotal();
     }
 
+    /**
+     * Si el {@link ArrayList} no esta vacio borra la linea en esa posicion,
+     * tras esto vuelve a calcular el total.
+     * @param posicion
+     *      La posicion en el {@link ArrayList} de la linea a borrar
+     */
     public void eliminarLinea(int posicion){
         if (posicion >= 0 && posicion < lineaFactura.size()) {
             lineaFactura.remove(posicion);
@@ -64,6 +93,12 @@ public class Factura {
         return total;
     }
 
+    /**
+     * Recorre el {@link ArrayList} sumando los totales a una variable 
+     * Luego calcula el total con IVA.
+     * @return
+     *      devuelve el precio total de la factura con el IVA añadido
+     */
     public double calcularTotal() {
         double sumaTotal=0;
         for (LineaFactura linea : lineaFactura) {
@@ -73,6 +108,9 @@ public class Factura {
         return total;
     }
 
+    /**
+     * Imprime por pantalla la factura completa.
+     */
     public void mostrarFactura(){
         calcularTotal();
         System.out.println("Factura Numero"+identificador+ " a fecha de "+fecha+"\n"+

@@ -63,5 +63,6 @@ public class Arraylist4 {
                     break;
             }
         } while (!opcion.equals("e"));
+        tecl.close();
     }
 }
