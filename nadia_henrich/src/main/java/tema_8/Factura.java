@@ -4,10 +4,10 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Factura {
-    private int identificador;
-    private LocalDate fecha;
-    private int idCliente;
-    private final int iVA=21;
+    private final String identificador;
+    private final LocalDate fecha;
+    private final String idCliente;
+    private final int IVA=21;
     private ArrayList<LineaFactura> lineaFactura;
     private double total;
 
@@ -21,7 +21,7 @@ public class Factura {
      * @param idCliente
      *      El numero que identifica el cliente
      */
-    public Factura(int identificador,  int idCliente) {
+    public Factura(String identificador,  String idCliente) {
         this.identificador = identificador;
         this.fecha = LocalDate.now();
         this.idCliente = idCliente;
@@ -42,8 +42,7 @@ public class Factura {
      * 
      * @see LineaFactura#LineaFactura(String, double, int)
      */
-    public void añadirLinea(String descripcion,double precioUnitario, int cantidad){
-        LineaFactura linea= new LineaFactura(descripcion, precioUnitario, cantidad);
+    public void añadirLinea(LineaFactura linea){
         lineaFactura.add(linea);
         calcularTotal();
     }
@@ -52,24 +51,20 @@ public class Factura {
      * Si el {@link ArrayList} no esta vacio borra la linea en esa posicion,
      * tras esto vuelve a calcular el total.
      * @param posicion
-     *      La posicion en el {@link ArrayList} de la linea a borrar
+     *      Indice en el {@link ArrayList} de la linea a borrar
+     * @return
+     *      La LineaFactura eliminada o null si no se borra nada
      */
-    public void eliminarLinea(int posicion){
+    public LineaFactura eliminarLinea(int posicion){
         if (posicion >= 0 && posicion < lineaFactura.size()) {
-            lineaFactura.remove(posicion);
-        } else {
-            System.out.println("Posición no válida: " + posicion);
-        }
-        calcularTotal();
+            return lineaFactura.remove(posicion);
+        } else return null;
+        
     
     }
 
-    public int getIdentificador() {
+    public String getIdentificador() {
         return identificador;
-    }
-
-    public void setIdentificador(int identificador) {
-        this.identificador = identificador;
     }
 
     public LocalDate getFecha() {
@@ -77,16 +72,12 @@ public class Factura {
     }
 
 
-    public int getIdCliente() {
+    public String getIdCliente() {
         return idCliente;
     }
 
-    public void setIdCliente(int idCliente) {
-        this.idCliente = idCliente;
-    }
-
     public int getiVA() {
-        return iVA;
+        return IVA;
     }
 
     public double getTotal() {
@@ -104,7 +95,7 @@ public class Factura {
         for (LineaFactura linea : lineaFactura) {
             sumaTotal += linea.getImporteTotal();
         }
-        total= sumaTotal*(1+(iVA/100));
+        total= sumaTotal*(1+(IVA/100));
         return total;
     }
 

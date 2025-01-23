@@ -1,11 +1,11 @@
 package tema_8;
 
 public class LineaFactura {
-    private String descripcion;
-    private double precioUnitario;
-    private int cantidadUnidades;
+    private final String descripcion;
+    private final double precioUnitario;
+    private final int cantidadUnidades;
     private final int descuento;
-    private double importeTotal;
+    private final double importeTotal;
 
     /**
      * Con el uso de un ternario le damos valor a descuento, 
@@ -33,24 +33,12 @@ public class LineaFactura {
         return descripcion;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
     public double getPrecioUnitario() {
         return precioUnitario;
     }
 
-    public void setPrecioUnitario(double precioUnitario) {
-        this.precioUnitario = precioUnitario;
-    }
-
     public int getCantidadUnidades() {
         return cantidadUnidades;
-    }
-
-    public void setCantidadUnidades(int cantidadUnidades) {
-        this.cantidadUnidades = cantidadUnidades;
     }
 
     public int getDescuento() {

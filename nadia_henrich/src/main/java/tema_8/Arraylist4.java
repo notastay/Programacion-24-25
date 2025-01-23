@@ -23,21 +23,22 @@ public class Arraylist4 {
                 case "a":
                     // Opción para dar de alta una nueva factura
                     System.out.println("Introduce identificador e idCliente:");
-                    int identificador = tecl.nextInt(); // Leer el identificador de la factura
-                    int idCliente = tecl.nextInt();    // Leer el identificador del cliente
+                    String identificador = tecl.nextLine(); // Leer el identificador de la factura
+                    String idCliente = tecl.nextLine();    // Leer el identificador del cliente
                     tecl.nextLine(); // Consumir la nueva línea pendiente
                     f1 = new Factura(identificador, idCliente); // Crear una nueva factura
                     break;
 
                 case "b":
                     // Opción para añadir una línea a la factura
-                    if (f1 != null && f1.getIdentificador() != 0) {
+                    if (f1 != null) {
                         System.out.println("Introduce descripcion, precio unitario, y cantidad:");
                         String descripcion = tecl.nextLine(); // Leer la descripción
                         double precioUnitario = tecl.nextDouble(); // Leer el precio unitario
                         int cantidad = tecl.nextInt(); // Leer la cantidad
+                        LineaFactura linea=new LineaFactura(descripcion, precioUnitario, cantidad);
                         tecl.nextLine(); // Consumir la nueva línea pendiente
-                        f1.añadirLinea(descripcion, precioUnitario, cantidad); // Añadir la línea a la factura
+                        f1.añadirLinea(linea); // Añadir la línea a la factura
                     } else {
                         // Mensaje si no se ha dado de alta una factura
                         System.out.println("Primero debes dar de alta una factura.");
