@@ -31,7 +31,7 @@ public class Arraylist4 {
 
                 case "b":
                     // Opción para añadir una línea a la factura
-                    if (f1 != null) {
+                    if (f1 != null) { 
                         System.out.println("Introduce descripcion, precio unitario, y cantidad:");
                         String descripcion = tecl.nextLine(); // Leer la descripción
                         double precioUnitario = tecl.nextDouble(); // Leer el precio unitario

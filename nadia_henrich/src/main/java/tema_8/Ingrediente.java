@@ -1,14 +1,14 @@
 package tema_8;
 
-public class Ingredientes {
+public class Ingrediente {
     private String nombre;
-    private int cantidad;
+    private float cantidad;
     private String unidad;
 
     
-    public Ingredientes(String nombre, float cantidad, String unidad) {
+    public Ingrediente(String nombre, float cantidad, String unidad) {
         this.nombre = nombre;
-        this.cantidad = Math.round(cantidad);
+        this.cantidad = cantidad;
         this.unidad = unidad;
     }
 
@@ -23,17 +23,17 @@ public class Ingredientes {
     }
 
 
-    public int getCantidad() {
+    public float getCantidad() {
         return cantidad;
     }
 
 
-    public void setCantidad(int cantidad) {
+    public void setCantidad(float cantidad) {
         this.cantidad = cantidad;
     }
 
 
-    public String getUnidad() {
+    public String getUnidad() { 
         return unidad;
     }
 

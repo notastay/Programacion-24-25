@@ -6,13 +6,13 @@ public class Receta {
     private String nombre;
     private String elaboracion;
     private int duracion;
-    private Ingredientes[] ingredientes;
+    private Ingrediente[] ingredientes;
 
-    public Receta(String nombre, String elaboracion, int duracion, int canidadIngredientes) {
+    public Receta(String nombre, String elaboracion, int duracion, Ingrediente[] ingredientes) {
         this.nombre = nombre;
         this.elaboracion = elaboracion;
         this.duracion = duracion;
-        this.ingredientes= new Ingredientes[canidadIngredientes];
+        this.ingredientes= ingredientes;
     }
 
 
@@ -41,14 +41,14 @@ public class Receta {
         this.duracion = duracion;
     }
 
-    public Optional<String> añadirIngrediente(Ingredientes ingrediente){
+    public Optional<String> añadirIngrediente(Ingrediente ingrediente){
         for (int i = 0; i < ingredientes.length; i++) {
             if(ingredientes[i]==null){
                 ingredientes[i]=ingrediente;
                 return Optional.of(ingredientes[i].toString());
             }
         }
-        return Optional.of("No se pueden añadir mas ingredientes");
+        return Optional.empty();
 
     }
 
@@ -59,12 +59,12 @@ public class Receta {
                 return Optional.of("Ingrediente Eliminado "+nombreIngrediente);
             }
         }
-        return Optional.of("Ingrediente no encontrado");
+        return Optional.empty();
     }
 
     public void mostrarReceta() {
         System.out.println( "Receta [nombre=" + nombre + ", elaboracion=" + elaboracion + ", duracion=" + duracion+"]");
-        for (Ingredientes ingredientes2 : ingredientes) {
+        for (Ingrediente ingredientes2 : ingredientes) {
             System.out.println(ingredientes2);
         }
     }
