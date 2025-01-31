@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Arrays",
+            "request": "launch",
+            "mainClass": "tema_8.Arrays",
+            "projectName": "nadia_henrich"
+        },
+        {
+            "type": "java",
             "name": "Arraylist1",
             "request": "launch",
             "mainClass": "tema_8.Arraylist1",
